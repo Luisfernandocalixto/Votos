@@ -1,0 +1,25 @@
+.title {
+    scale: .6 !important;
+    text-align: center !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.item-content {
+    display: grid;
+    place-items: center;
+}
+
+dialog{
+    scale: .6;
+}
+
+span{
+    margin-bottom: 8px;
+}

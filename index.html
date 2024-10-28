@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Votaciones">
+    <meta property="og:image" content="./img/guadalajara.webp">
+    <meta property="og:description" content="Vota por tu equipo favorito">  
+    <title>Votos</title>
+    <link rel="shortcut icon" href="./img/guadalajara.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+ 
+<body>
+    <h1 class="title" >Vote por su equipo favorito, gana el equipo en llegar a 20 votos</h1>
+    <main>
+        <section class="container"
+            >
+            <div class="item-content" >
+                <img src="./img/america.webp" alt="">
+                <h6>AMERICA</h6>
+                <span>Contando <small class="totalamerica"></small></span>
+                <button id="btn1">Agregar voto</button>
+            </div>
+            <div class="item-content" >
+                <img src="./img/atlas.webp" alt="">
+                <h6>ATLAS</h6>
+                <span>Contando <small class="totalatlas"></small></span>
+                <button id="btn2">Agregar voto</button>
+            </div>
+            <div class="item-content" >
+                <img src="./img/guadalajara.webp" alt="">
+                <h6>GUADALAJARA</h6>
+                <span>Contando <small class="totalguadalajara"></small></span>
+                <button id="btn3">Agregar voto</button>
+            </div>
+        </section>
+    </main>
+    <dialog id="modal-example" open="false">
+        <article>
+            <header>
+                <button aria-label="Close" rel="prev" data-target="modal-example" onclick="toggleModal(event)"></button>
+                <h3>Felicidades!</h3>
+            </header>
+            <p class="message">
+
+            </p>
+            <footer> 
+                <button role="button" class="secondary" data-target="modal-example" onclick="toggleModal(event)">
+                    Cancelar</button><button autofocus="" data-target="modal-example" onclick="toggleModal(event)">
+                    Aceptar
+                </button>
+            </footer>
+        </article>
+    </dialog>
+
+    <!-- script -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/canvas.js"></script>
+     <script type="" src="./js/main.js"></script>
+    <!-- script -->
+</body>
+
+</html>
